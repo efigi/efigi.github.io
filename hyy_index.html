@@ -8,6 +8,10 @@
 		<link rel="icon" type="image/ico" href="img/a.png" />
 		<title>Hybrid Yawyan</title>
 		<style type="text/css">
+			body {
+				background-image: url(img/crossword.png);
+				background-repeat: repeat;
+			}
 			#logo {
 				width: 60px;
 				height: 50px;
@@ -37,17 +41,25 @@
 				display: inline-block;
 			}
 
-
-			img {
+			.img {
 	  			filter: gray; /* IE6-9 */
 	  			filter: grayscale(1); /* Firefox 35+ */
 	  			-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 			}
 
-			.background-image {
-				width: 70%;
+			.block-image {
+				width: 100%;
 				height: 70%;
 				float: right;
+			}
+
+			p {
+				background-color: black;
+				color:white;
+				display: inline;
+				padding: 0.5rem;
+				-webkit-box-decoration-break: clone;
+				box-decoration-break: clone;
 			}
 
 			#social-media {
@@ -104,21 +116,21 @@
 		<!--contact info shorter-->
 		<!--instructors (not yet sure, might be too much for loading-->
 		<h2>Get fit</h2>
-			<img class="background-image" id="fit" src="img/fit.jpg"/>
+			<img class="block-image" id="fit" src="img/fit.jpg"/>
 			<p>Our technical lessons, conditioning drills and fitness programs were made for fighters and will make you look like one too.</p>
 			<a href="#lessons">Lessons</a>
 			<a href="#instructors">Instructors</a>
 		<h2>Defend yourself</h2>
-			<img class="background-image" id="self-defense" src="img/self-defense.jpg"/>
+			<img class="block-image" id="self-defense" src="img/self-defense.jpg"/>
 			<p>Learn self-defense with our lessons in knife fighting, weapons training and disarming.</p>
 			<!--lessons-->
 		<h2>Fight</h2>
-			<img class="background-image" id="fight" src="img/fight.jpg"/>
+			<img class="block-image" id="fight" src="img/fight.jpg"/>
 			<p>Engage in live sparring as well as drills, giving you experience and confidence if a real fight breaks out. You can also join our regular tournaments which are held with other gyms.</p>
 			<a href="#awards">Awards</a>
 			<a href="#calendar">Calendar</a>
 		<h2>Learn a Filipino Martial Art</h2>
-			<img class="background-image" id="fma" src="img/fma.jpg"/>
+			<img class="block-image" id="fma" src="img/fma.jpg"/>
 			<p>Hybrid Yawyan (short for Sayaw ng Kamatayan) is a Filipino martial art created by Master Nap.</p>
 			<a href="#About">More about Hybrid Yawyan</a>
 		<h2>Let's go</h2>

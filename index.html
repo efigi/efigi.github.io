@@ -5,21 +5,42 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> 
-		<link rel="icon" type="image/ico" href="img/logo.png" />
+		<link rel="icon" type="image/ico" href="img/icon.png" />
 		<title>Efigi's Website</title>
+
+    	<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" href="css/bootstrap.css">
+    	<link rel="stylesheet" href="css/layout.css">
 		<style type="text/css">
 			body {
-				background-image: url(dark_embroidery.png);
+				padding: 10px;
+				background-image: url(img/triangular.png);
 				background-repeat: repeat;
+				display: inline-block;
 			}
 
-			#logo {
-				margin-bottom: 100px;	
+			nav {
+				display: inline-block;
+			}
+			nav > ul{
+				list-style-type: none;
+			}
+
+			nav > ul > li {
+				display: inline-block;
+				margin-left: 10px;
+				margin-right: 10px;
+				font-size: 20px;
+			}
+
+			footer {
+				clear: both;
+				text-align: center;
+			}
+
 			}
 		</style>
 		<!-- Bootstrap -->
-    	<link rel="stylesheet" href="css/bootstrap.min.css">
-    	<link rel="stylesheet" href="css/bootstrap.css">
 
     	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,17 +52,36 @@
 
 	<body>
 		<header>
-			<img id="logo" src="img/logo.jpg" />
-			<h1>Welcome to my website!</h1>
+			<img id="logo" src="img/logo2.png" />
+			<nav>
+				<ul>
+					<li><a href="#about_me">About Me</a></li>
+					<li><a href="#practice">Practice</a></li>
+				</ul>
+			</nav>
 		</header>
 
-		<h2>About Me</h2>
+		<h2 id="about_me">About Me</h2>
 		<p>Hello, this is me playing around with websites. I'm using this to play around with the things I've learned about HTML and Javascript. Before I jump into integrating Javascript, I want to see if I'm able to create a decent outline for a webstite and then see where I go from there.</p>
 		<br>
-		<a href="hyy_index.html">link to example website I'm making. I don't own any of these pictures.</a>
-		<footer>
-			Efigi Productions - 2015 All Rights Reserved.
-		</footer>
+		<h2 id="practice">Practice Websites</h2>
+		<a href="hyy_index.html">Link to MMA gym website I'm practicing on. It's normal website with a splash page that uses the one-page website's philosophy. I don't own any of these pictures.</a>
+		<h3>TODO</h3>
+		<ol class="todo_items">
+			<li>make each picture take up whole width</li>
+			<li>make each text paragraph overlap its corresponding picturese</li>
+			<li>add a legitimate navigation bar</li>
+			<li>add carousel</li>
+			<li>add pictures of coaches</li>
+			<li>create a Call to Action contact form</li>
+			<li>in essence make it look like <a href="http://www.crossfitwestside.com">this</a></li>
+		</ol>
+
+		<div id="wrapper">
+			<footer id="footer">
+				Efigi Productions - 2015 All Rights Reserved.
+			</footer>
+		</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     	<!-- Include all compiled plugins (below), or include individual files as needed -->
