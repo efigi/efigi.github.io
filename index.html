@@ -19,11 +19,17 @@
 				display: inline-block;
 			}
 
+			.jumbotron {
+				text-align: center;
+			}
+
 			header {
 				background-color: white;	
+				position: static;
 				border-radius: 5px;
 				background-image: url(img/crossword.png);
 				padding: 0;
+				margin: 0;
 			}
 
 			#logo,
@@ -64,7 +70,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header class="container_fluid">
 			<img id="logo" src="img/logo2.png" />
 			<nav>
 				<ul>
@@ -73,7 +79,9 @@
 				</ul>
 			</nav>
 		</header>
+
 		<div id="the_rest">
+
 			<h2 id="about_me">About Me</h2>
 			<p>Hello, this is me playing around with websites. I'm using this to play around with the things I've learned about HTML and Javascript. Before I jump into integrating Javascript, I want to see if I'm able to create a decent outline for a webstite and then see where I go from there.</p>
 			<br>
