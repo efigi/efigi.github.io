@@ -21,7 +21,7 @@
 				display: inline;
 				float: left;
 			}
-
+			
 			#navbar_header {
 				float: left;
 				margin-right: 20px;
@@ -45,10 +45,12 @@
 				display: inline-block;
 			}
 
-			.img {
-	  			filter: gray; /* IE6-9 */
-	  			filter: grayscale(1); /* Firefox 35+ */
-	  			-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+			#fit:hover,
+			#self_defense:hover,
+			#fma:hover,
+			#fight:hover {
+	  			filter: none;
+	  			-webkit-filter: grayscale(0);
 			}
 
 			#fit {
@@ -65,6 +67,15 @@
 
 			#fight {
 				background-image: url(img/fight.jpg);
+			}
+
+			#fit,
+			#self_defense,
+			#fma,
+			#fight {
+	  			filter: gray; /* IE6-9 */
+	  			filter: grayscale(1); /* Firefox 35+ */
+	  			-webkit-filter: grayscale(1);
 			}
 
 			#call_to_action {
@@ -125,6 +136,14 @@
 				display: inline-block;
 			}
 
+			.btn {
+				margin-left: 1rem;
+				background: none;
+				background-color: rgba(0,0,0, 0.2);
+				color: white;
+			}
+
+
 		</style>
 
     	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -159,27 +178,27 @@
 		<!--contact info shorter-->
 		<!--instructors (not yet sure, might be too much for loading-->
 		<div class="block" id="fit">
-			<h2 class="block_title"><span class="highlight">Get fit</span></h2>
+			<h2 class="block_title"><span class="highlight">Get Fit</span></h2>
 			<p class="block_description"><span class="highlight">Our technical lessons, conditioning drills and fitness programs were made for fighters and will make you look like one too.</span></p>
-			<a class="block_links" href="#lessons">Lessons</a>
-			<a class="block_links" href="#instructors">Instructors</a>
+			<a href="#lessons" class="btn btn-default btn-lg" role="button">Lessons</a>
+			<a href="#instructors" class="btn btn-default btn-lg" role="button">Instructors</a>
 		</div>
 		<div class="block" id="self_defense">
 			<h2 class="block_title"><span class="highlight">Defend Yourself</span></h2>
 			<p class="block_description"><span class="highlight">Learn self-defense with our lessons in knife fighting, weapons training and disarming.</span></p>
-			<a class="block_links" href="#lessons">Lessons</a>
+			<a href="#lessons" class="btn btn-default btn-lg" role="button">Lessons</a>
 			<!--lessons-->
 		</div>
 		<div class="block" id="fight">
 			<h2 class="block_title"><span class="highlight">Fight</span></h2>
 			<p class="block_description"><span class="highlight">Engage in live sparring as well as drills, giving you experience and confidence if a real fight breaks out. You can also join our regular tournaments which are held with other gyms.</span></p>
-			<a class="block_links" href="#awards">Awards</a>
-			<a class="block_links" href="#calendar">Calendar</a>
+			<a href="#awards" class="btn btn-default btn-lg" role="button">Awards</a>
+			<a href="#calendar" class="btn btn-default btn-lg" role="button">Calendar</a>
 		</div>
 		<div class="block" id="fma">
 			<h2 class="block_title"><span class="highlight">Learn a Filipino Martial Art</span></h2>
 			<p class="block_description"><span class="highlight">Hybrid Yawyan (short for Sayaw ng Kamatayan) is a Filipino martial art created by Master Nap.</span></p>
-			<a class="block_links" href="#About">More about Hybrid Yawyan</a>
+			<a href="#about" class="btn btn-default btn-lg" role="button">About Hybrid Yawyan</a>
 		</div>
 		<div id="call_to_action">
 			<h2 id="contact_us">Contact Us</h2>
