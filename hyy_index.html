@@ -7,6 +7,9 @@
     	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> 
 		<link rel="icon" type="image/ico" href="img/a.png" />
 		<title>Hybrid Yawyan</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" href="css/bootstrap.css">
 		<style type="text/css">
 			body {
 				background-image: url(img/crossword.png);
@@ -21,14 +24,15 @@
 
 			#navbar_header {
 				float: left;
+				margin-right: 20px;
 			}
 
 			nav {
 				float: right;
 			}
 
-			#navbar_header {
-				margin-right: 20px;
+			#header {
+				text-align: center;
 			}
 
 			div nav,
@@ -47,17 +51,62 @@
 	  			-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 			}
 
-			.block-image {
+			#fit {
+				background-image: url(img/fit_cropped.png);
+			}
+
+			#self_defense {
+				background-image: url(img/self-defense.jpg);
+			}
+
+			#fma {
+				background-image: url(img/fma.jpg);
+			}
+
+			#fight {
+				background-image: url(img/fight.jpg);
+			}
+
+			#call_to_action {
+				text-align: center;
+			}
+
+			.block {
+				background-size: cover;
+				background-repeat: no-repeat;
 				width: 100%;
-				height: 70%;
+				margin: 0 auto;
+				height: 700px;
 				float: right;
 			}
 
-			p {
-				display: inline;
-				padding: 0.5rem;
+			.block_title,
+			.block_description,
+			.block_links{
+				text-align: justify;
+				font-size: 2em;
+				width: auto;
+				display: block;
+				padding: 0.5em;
+				line-height: 1.55em;
 				-webkit-box-decoration-break: clone;
 				box-decoration-break: clone;
+			}
+
+			.block_links {
+				display: inline-block;
+				padding: 1rem;
+				margin-left: 1rem;
+				color: white;
+				background-color: rgba(0,0,0,0.5);
+				border-radius: 20px;
+				padding: 0.5rem;
+			}
+
+			.highlight {
+				color: white;
+				background-color: rgba(0,0,0,0.5);
+				padding: 0.5rem;
 			}
 
 			#social-media {
@@ -77,10 +126,6 @@
 			}
 
 		</style>
-
-		<!-- Bootstrap -->
-    	<link rel="stylesheet" href="css/bootstrap.min.css">
-    	<link rel="stylesheet" href="css/bootstrap.css">
 
     	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -103,7 +148,7 @@
 						<li><a href="#instructors">Instructors</a></li>
 						<li><a href="#awards">Awards</a></li>
 						<li><a href="#calendar">Calendar</a></li>
-						<li><a href="#contact">Contact Us</a></li>
+						<li><a href="#contact_us">Contact Us</a></li>
 						<li><a href="#rates">Rates</a></li>
 					</ul>
 				</nav>
@@ -113,26 +158,31 @@
 		<h1 id="header">Hybrid Yawyan</h1>
 		<!--contact info shorter-->
 		<!--instructors (not yet sure, might be too much for loading-->
-		<h2>Get fit</h2>
-			<img class="block-image" id="fit" src="img/fit.jpg"/>
-			<p>Our technical lessons, conditioning drills and fitness programs were made for fighters and will make you look like one too.</p>
-			<a href="#lessons">Lessons</a>
-			<a href="#instructors">Instructors</a>
-		<h2>Defend yourself</h2>
-			<img class="block-image" id="self-defense" src="img/self-defense.jpg"/>
-			<p>Learn self-defense with our lessons in knife fighting, weapons training and disarming.</p>
-			<a href="#lessons">Lessons</a>
+		<div class="block" id="fit">
+			<h2 class="block_title"><span class="highlight">Get fit</span></h2>
+			<p class="block_description"><span class="highlight">Our technical lessons, conditioning drills and fitness programs were made for fighters and will make you look like one too.</span></p>
+			<a class="block_links" href="#lessons">Lessons</a>
+			<a class="block_links" href="#instructors">Instructors</a>
+		</div>
+		<div class="block" id="self_defense">
+			<h2 class="block_title"><span class="highlight">Defend Yourself</span></h2>
+			<p class="block_description"><span class="highlight">Learn self-defense with our lessons in knife fighting, weapons training and disarming.</span></p>
+			<a class="block_links" href="#lessons">Lessons</a>
 			<!--lessons-->
-		<h2>Fight</h2>
-			<img class="block-image" id="fight" src="img/fight.jpg"/>
-			<p>Engage in live sparring as well as drills, giving you experience and confidence if a real fight breaks out. You can also join our regular tournaments which are held with other gyms.</p>
-			<a href="#awards">Awards</a>
-			<a href="#calendar">Calendar</a>
-		<h2>Learn a Filipino Martial Art</h2>
-			<img class="block-image" id="fma" src="img/fma.jpg"/>
-			<p>Hybrid Yawyan (short for Sayaw ng Kamatayan) is a Filipino martial art created by Master Nap.</p>
-			<a href="#About">More about Hybrid Yawyan</a>
-		<h2>Let's go</h2>
+		</div>
+		<div class="block" id="fight">
+			<h2 class="block_title"><span class="highlight">Fight</span></h2>
+			<p class="block_description"><span class="highlight">Engage in live sparring as well as drills, giving you experience and confidence if a real fight breaks out. You can also join our regular tournaments which are held with other gyms.</span></p>
+			<a class="block_links" href="#awards">Awards</a>
+			<a class="block_links" href="#calendar">Calendar</a>
+		</div>
+		<div class="block" id="fma">
+			<h2 class="block_title"><span class="highlight">Learn a Filipino Martial Art</span></h2>
+			<p class="block_description"><span class="highlight">Hybrid Yawyan (short for Sayaw ng Kamatayan) is a Filipino martial art created by Master Nap.</span></p>
+			<a class="block_links" href="#About">More about Hybrid Yawyan</a>
+		</div>
+		<div id="call_to_action">
+			<h2 id="contact_us">Contact Us</h2>
 			<p>Contact Information:<br />
 				<br />
 				<address>
@@ -150,15 +200,16 @@
 					<br />
 					Email:<br />
 					hybridyawyan@facebook.com<br />
-			</address>
+				</address>
 			</p>
-			<a href="#rates">Rates</a>
-
+			<a href="#rates">Rates</a><br />
+			<br />
+		<div>
 		<!--left:social media-->
 		<span id="social-media">Follow us on Facebook!</span>
 		<!--right: sponsors-->
 		<footer>
-			Cinderella Boy Productions - 2015 All Rights Reserved.
+			Efigi Productions - 2015 All Rights Reserved.
 		</footer>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
