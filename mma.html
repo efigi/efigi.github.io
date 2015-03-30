@@ -5,8 +5,8 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> 
-		<link rel="icon" type="image/ico" href="img/a.png" />
-		<title>Hybrid Yawyan</title>
+		<link rel="icon" type="image/ico" href="img/tile.png" />
+		<title>Pearl Boxing Gym</title>
 
 		<link rel="stylesheet" href="css/bootstrap.min.css">
     	<link rel="stylesheet" href="css/bootstrap.css">
@@ -15,8 +15,9 @@
 				background-image: url(img/crossword.png);
 				background-repeat: repeat;
 			}
+
 			#logo {
-				width: 60px;
+				width: 50px;
 				height: 50px;
 				display: inline;
 				float: left;
@@ -54,19 +55,23 @@
 			}
 
 			#fit {
-				background-image: url(img/fit_cropped.png);
+				background-image: url(img/boxing_fit.jpg);
 			}
 
 			#self_defense {
-				background-image: url(img/self-defense.jpg);
+				background-image: url(img/boxing_train.jpg);
 			}
 
 			#fma {
-				background-image: url(img/fma.jpg);
+				background-image: url(img/boxing_coach.jpg);
 			}
 
 			#fight {
-				background-image: url(img/fight.jpg);
+				background-image: url(img/boxing_fight.jpg);
+			}
+
+			#community {
+				background-image: url(img/boxing_community.jpg);
 			}
 
 			#fit,
@@ -143,7 +148,9 @@
 				color: white;
 			}
 
-
+			footer {
+				margin-top: 50px;
+			}
 		</style>
 
     	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -156,49 +163,51 @@
 
 	<body>
 		<!--logo in header-->
-		<header>
-			<img id="logo" src="img/a.png"/>
-			<h3 id="navbar_header">Hybrid Yawyan</h3><!--only header-->
-			<div class="navbar">
-				<nav>
-					<ul>
-						<li><a href="#About">About</a></li>
-						<li><a href="#lessons">Lessons</a></li>
-						<li><a href="#instructors">Instructors</a></li>
-						<li><a href="#awards">Awards</a></li>
-						<li><a href="#calendar">Calendar</a></li>
-						<li><a href="#contact_us">Contact Us</a></li>
-						<li><a href="#rates">Rates</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+		<div data-spy="affix">
+			<header>
+				<img id="logo" src="img/tile.png"/>
+				<h3 id="navbar_header">Pearl Boxing Gym</h3><!--only header-->
+				<div class="navbar">
+					<nav>
+						<ul>
+							<li><a href="#about">About</a></li>
+							<li><a href="#programs">Programs</a></li>
+							<li><a href="#lessons">Lessons</a></li>
+							<li><a href="#instructors">Instructors</a></li>
+							<li><a href="#awards">Awards</a></li>
+							<li><a href="#calendar">Calendar</a></li>
+							<li><a href="#contact_us">Contact Us</a></li>
+							<li><a href="#rates">Rates</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+		</div>
 		<!--carousel of pictures-->
-		<h1 id="header">Hybrid Yawyan</h1>
+		<h1 id="header">Pearl Boxing Gym</h1>
 		<!--contact info shorter-->
 		<!--instructors (not yet sure, might be too much for loading-->
 		<div class="block" id="fit">
 			<h2 class="block_title"><span class="highlight">Get Fit</span></h2>
 			<p class="block_description"><span class="highlight">Our technical lessons, conditioning drills and fitness programs were made for fighters and will make you look like one too.</span></p>
-			<a href="#lessons" class="btn btn-default btn-lg" role="button">Lessons</a>
-			<a href="#instructors" class="btn btn-default btn-lg" role="button">Instructors</a>
+			<a href="#lessons" class="btn btn-default btn-lg" role="button">Fitness Programs</a>
 		</div>
 		<div class="block" id="self_defense">
-			<h2 class="block_title"><span class="highlight">Defend Yourself</span></h2>
-			<p class="block_description"><span class="highlight">Learn self-defense with our lessons in knife fighting, weapons training and disarming.</span></p>
+			<h2 class="block_title"><span class="highlight">Train Like A Fighter</span></h2>
+			<p class="block_description"><span class="highlight">The training includes real skill training done by professional fighters, making you better every session.</span></p>
 			<a href="#lessons" class="btn btn-default btn-lg" role="button">Lessons</a>
 			<!--lessons-->
 		</div>
 		<div class="block" id="fight">
 			<h2 class="block_title"><span class="highlight">Fight</span></h2>
-			<p class="block_description"><span class="highlight">Engage in live sparring as well as drills, giving you experience and confidence if a real fight breaks out. You can also join our regular tournaments which are held with other gyms.</span></p>
+			<p class="block_description"><span class="highlight">Engage in live sparring as well as drills, giving you experience and confidence when a real fight breaks out. You can also join our regular tournaments which are held with other gyms.</span></p>
 			<a href="#awards" class="btn btn-default btn-lg" role="button">Awards</a>
 			<a href="#calendar" class="btn btn-default btn-lg" role="button">Calendar</a>
 		</div>
 		<div class="block" id="fma">
-			<h2 class="block_title"><span class="highlight">Learn a Filipino Martial Art</span></h2>
-			<p class="block_description"><span class="highlight">Hybrid Yawyan (short for Sayaw ng Kamatayan) is a Filipino martial art created by Master Nap.</span></p>
-			<a href="#about" class="btn btn-default btn-lg" role="button">About Hybrid Yawyan</a>
+			<h2 class="block_title"><span class="highlight">Learn from Great Coaches</span></h2>
+			<p class="block_description"><span class="highlight">Our coaches are distinguished former fighters who are knowledgeable and trained to help you reach your goals.</span></p>
+			<a href="#instructors" class="btn btn-default btn-lg" role="button">Instructors</a>
 		</div>
 		<div id="call_to_action">
 			<h2 id="contact_us">Contact Us</h2>
@@ -206,29 +215,28 @@
 				<br />
 				<address>
 					Address:<br /> 
-					Hybrid Yaw-Yan Mixed Martial Arts<br />
-					Training Center<br />
-					5th floor Karen Bldg. 9 Annapolis St., Cubao 1102 Quezon City, Philippines<br />
+					Pearl Boxing Gym<br />
+					2nd floor Drummond Bldg. 4 Greensmith St., 90210 Chicago City, USA<br />
 					<br />
 					Mobile Phones:<br />
-					09053416868<br />
-					09182746083<br />
+					09111234567<br />
+					09112345678<br />
 					<br />
 					Telephone:<br />
-					(02) 557-0057<br />
+					(03) 123-4567<br />
 					<br />
 					Email:<br />
-					hybridyawyan@facebook.com<br />
+					pearlboxinggym@facebook.com<br />
 				</address>
 			</p>
-			<a href="#rates">Rates</a><br />
+			<a href="#rates">Rates</a>
 			<br />
 		<div>
 		<!--left:social media-->
 		<span id="social-media">Follow us on Facebook!</span>
 		<!--right: sponsors-->
 		<footer>
-			Efigi Productions - 2015 All Rights Reserved.
+			<a href="index.html">Efigi Productions</a> - 2015 All Rights Reserved.
 		</footer>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
