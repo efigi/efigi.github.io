@@ -17,10 +17,18 @@
 				background-repeat: repeat;
 			}
 
+			nav {
+				background-color: red;
+			}
+
 			#logo {
-				width: 50px;
-				height: 50px;
+				width: 30px;
+				height: 30px;
 				display: inline;
+				float: left;
+			}
+
+			#brand_title {
 				float: left;
 			}
 			
@@ -37,6 +45,9 @@
 				text-align: center;
 			}
 
+			h3 {
+				margin: 0;
+			}
 			div nav,
 			div nav ul,
 			div nav ul li,
@@ -64,11 +75,16 @@
 			}
 
 			#fit {
+				margin-top: 75px;
 				background-image: url(img/boxing_fit.jpg);
 			}
 
 			#self_defense {
 				background-image: url(img/boxing_train.jpg);
+			}
+
+			.navbar-right {
+				margin-right: 10px;
 			}
 
 			#fma {
@@ -171,10 +187,10 @@
 	</head>
 
 	<body>
-		<!--logo in header-->
+		<!--logo in header
 		<div data-spy="affix">
 			<header>
-				<h3 id="navbar_header">Pearl Boxing Gym</h3><!--only header-->
+				<h3 id="navbar_header">Pearl Boxing Gym</h3>
 				<div class="navbar">
 					<nav>
 						<ul>
@@ -190,9 +206,37 @@
 					</nav>
 				</div>
 			</header>
-		</div>
+		</div>-->
+		<header class="container-fluid">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span> 
+			      </button>
+			      <a class="navbar-brand" href="#">
+			      	<img id="logo" src="img/boxing_gloves2.png" />
+			      	<h3 id="brand_title">Pearl Boxing Gym</h3>
+			      </a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#programs">Programs</a></li>
+					<li><a href="#lessons">Lessons</a></li>
+					<li><a href="#instructors">Instructors</a></li>
+					<li><a href="#awards">Awards</a></li>
+					<li><a href="#calendar">Calendar</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+					<li><a href="#rates">Rates</a></li>
+			      </ul>
+			    </div>
+			</nav>
+		</header>
+
 		<!--carousel of pictures-->
-		<h1 id="header">Pearl Boxing Gym</h1>
 		<!--contact info shorter-->
 		<!--instructors (not yet sure, might be too much for loading-->
 		<div class="block" id="fit">
@@ -236,8 +280,6 @@
 					pearlboxinggym@facebook.com<br />
 				</address>
 			</p>
-			<a id="rates" href="#rates">Rates</a>
-			<br />
 		<div>
 		<!--left:social media-->
 		<span id="social-media">Follow us on Facebook!</span>
