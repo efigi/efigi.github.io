@@ -5,6 +5,7 @@ title = "Cup of Gamedev"
 theme = "liva-hugo"
 summaryLength = "10"
 publishDir = ""
+contentDir = ""
 paginate = 6
 disqusShortname = ""
 
