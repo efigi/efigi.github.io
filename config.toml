@@ -80,7 +80,7 @@ disqusShortname = ""
 #################### default parameters ################################
 [params]
 logo = "/images/logo.png"
-home = "Home"
+home = "/"
 # Meta data
 description = "This is meta description"
 author = "Themefisher"
