@@ -84,7 +84,7 @@ home = "Home"
 
 # Meta data
 description = "This is meta description"
-#author = "Themefisher"
+author = "efigi"
 # Google Analitycs
 googleAnalitycsID = "Your ID" #TODO ad google analy
 googleAnalyticsID = "Your ID" #NOT SURE WHICH ONE WORKS!
