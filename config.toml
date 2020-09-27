@@ -1,12 +1,9 @@
 ######################## default configuration ####################
 baseURL = ""
 languageCode = "en-us"
-title = "Cup of Gamedev"
-theme = "liva-hugo"
+title = "Liva | Personal blog template"
+theme = "liva"
 summaryLength = "10"
-publishDir = ""
-contentDir = ""
-dataDir = ""
 paginate = 6
 disqusShortname = ""
 
