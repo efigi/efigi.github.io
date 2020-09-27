@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://examplesite.com"
 languageCode = "en-us"
-title = "Liva | Personal blog template"
+title = "Cup of Gamedev"
 theme = "liva"
 summaryLength = "10"
 paginate = 6
