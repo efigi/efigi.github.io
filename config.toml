@@ -67,7 +67,7 @@ disqusShortname = ""
   weight = 1
 
   [[menu.footer]]
-  name = "Post"
+  name = "Blog"
   URL = "/blog"
   weight = 2
 
@@ -89,7 +89,7 @@ author = "efigi"
 googleAnalitycsID = "Your ID" #TODO ad google analy
 googleAnalyticsID = "Your ID" #NOT SURE WHICH ONE WORKS!
 # Contact Information
-mobile = "+639282068230"
+#mobile = "+639282068230"
 email = "efigi@cupofgamedev.com"
 location = "Manila, Philippines"
 
@@ -123,6 +123,11 @@ link = "https://twitter.com/iamEfigi"
 #title = "instagram"
 #icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
 #link = "#"
+
+[[params.social]]
+title = "github"
+icon = "ti-youtube" # themify icon : https://themify.me/themify-icons
+link = "https://www.youtube.com/channel/UC3zS6Ki1YKLuari18d2Zl7w"
 
 [[params.social]]
 title = "github"
