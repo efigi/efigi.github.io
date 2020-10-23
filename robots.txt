@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://efigi.github.io/sitemap.xml
