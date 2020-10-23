@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cd Documents/Programming\ Projects/efigi.github.io
-hugo server -D
